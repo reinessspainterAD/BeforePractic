@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8" />
+        <title>PersonalTransactions</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/SignInForm.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/SignUpForm.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/PersonalAccount.css"/>
+        <script src="./web3/web3.min.js" defer></script>
+        <script type="module" src="./index.js" defer></script>
+        
+    </head>
+    <body>
+        <form id="SignInForm">
+            <label>Вход в Личный Кабинет</label>
+            <input type="text" placeholder="Введите Логин" id="Login">
+            <input type="text" placeholder="Введите Пароль" id="Password">
+            <error id="SIError"></error>
+            <div id="loginActions">
+                <button id="SignIn">Войти</button>
+                <button id="SignUp">Регистрация</button>
+            </div>
+        </form>
+
+        <form id="SignUpForm">
+            <label>Регистрация в системе</label>
+            <select id="RegistrationAddresses">
+                <option id="AddressOption"value="" disabled selected>Выберете свободный Адрес</option>
+            </select>
+            <input type="text" placeholder="Введите своё ФИО" id="NewFullName">
+            <input type="text" placeholder="Введите свой Логин" id="NewLogin">
+            <input type="text" placeholder="Введите свой Пароль" id="NewPassword">
+            <error id="RegisterError"></error>
+            <div>
+                <button id="SignUpForReal">Зарегистрироваться</button>
+            </div>
+        </form>
+
+        <section id="PersonalAccount">
+            <section id="PersonalData">
+                <!-- <img id="Logo" src="./LogoEth.png" alt="logo"> -->
+                <label id="UserName"></label>
+                <label id="Role"></label>
+                <label id="Balance"></label>
+                <button id="SignOut">Выйти</button>
+            </section>
+            <section id="UserActions">
+                <!-- Заполняется кодом -->
+            </section>
+        </section>
+    </body>
+</html>

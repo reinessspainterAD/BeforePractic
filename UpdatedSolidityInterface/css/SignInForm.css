@@ -1,0 +1,79 @@
+body{
+    background-image: url('../background.png');
+    background-repeat:repeat-y; 
+    background-position: center;
+    background-size:cover;
+    
+    width: 100%;
+    height: 100%;
+}
+
+#SignInForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 12.5%;
+    border-radius: 15px;
+    background: linear-gradient(rgb(0, 0, 253), rgb(199, 65, 240));
+    opacity: 95%;
+}
+
+#SignInForm label{
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 5%;
+
+}
+
+#SignInForm input{
+    margin: 1%;
+    width: 60%;
+    height: 60px;
+    border: none;
+    border-radius: 5px 0 5px 5px;
+    background-color: rgba(192, 119, 207, 0.267);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#SignInForm input:focus {
+    outline: none;
+}
+
+#SignInForm input::placeholder{
+    color: white;
+    opacity: 50%;
+    text-align: center;
+}
+
+#loginActions{
+    display: flex;
+    width: 75%;
+    height: 50%;
+    justify-content:space-around;
+    margin-top: 5%;
+    margin-bottom: 6%;
+
+}
+
+#loginActions button{
+    width: 40%;
+    height: 75px;
+    border-radius: 5px 0 5px 5px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 253, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+#loginActions button:hover{
+    background-color: rgba(199, 65, 240, 0.938);
+}
